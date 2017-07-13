@@ -1,8 +1,8 @@
 <?php
 @session_start();
 
-require '../config/OAuth_config.php';
-require '../libs/OAuth.php';
+require 'config/OAuth_config.php';
+require 'libs/OAuth.php';
 
 $oauth = new OAuth();
 $oauth->init();

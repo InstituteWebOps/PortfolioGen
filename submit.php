@@ -22,6 +22,7 @@ if(isset($_POST['login'])) {
     $file_tmp = $_FILES["image1"]['tmp_name'];
     $file_type = $_FILES["image1"]['type'];
 
+    $rollno = strtoupper($rollno);
     (file_exists("images/".$rollno."_1.jpg")?unlink("images/".$rollno."_1.jpg"):1);
     (file_exists("images/".$rollno."_2.jpg")?unlink("images/".$rollno."_2.jpg"):1);
     (file_exists("images/".$rollno."_3.jpg")?unlink("images/".$rollno."_3.jpg"):1);

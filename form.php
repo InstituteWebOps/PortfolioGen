@@ -20,7 +20,7 @@ if($stmt->fetchColumn())
 {
 	$sql ="SELECT * FROM collection WHERE rollno='".$_SESSION['rollno']."'";
 	foreach ($conn->query($sql) as $row) {
-        print_r($row);
+//        print_r($row);
 	}
 } else {
 		$row['name'] = "";
@@ -86,9 +86,10 @@ if($stmt->fetchColumn())
         padding: 10px;
     }
     
-    input[type=submit] {
-        width: 100%;
+    .butn {
+        width: 50%;
         background-color: #275193;
+        text-align: center;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -97,7 +98,7 @@ if($stmt->fetchColumn())
         cursor: pointer;
     }
     
-    input[type=submit]:hover {
+    .butn:hover {
         background-color: #1e437f;
     }
     
@@ -208,7 +209,7 @@ if($stmt->fetchColumn())
             </div>
             <br><br>
 
-            <center><input name="login" type="submit" value="Submit"><br><br></center>
+            <center><input name="login" type="submit" value="Submit"class="butn"><input name="logout" value="Log Out" onclick="window.location='logout.php'" class="butn" style="background-color: #275193"><br><br></center>
 
         </form>
     </div>

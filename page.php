@@ -63,6 +63,7 @@ $pdf->Ln();
 $pdf->Cell(60,10,'Awards: ',0,0);
 $pdf->Cell(120,10,$awards,0,1,'L',1);
 $pdf->Ln();
+
 $imgcheck = array(file_exists('./images/'.$rollno.'_1.jpg'),file_exists('./images/'.$rollno.'_2.jpg'),file_exists('./images/'.$rollno.'_3.jpg'));
 // $pdf->Cell(60,10, ($imgcheck[0]),0,0);
 // $pdf->Cell(60,10, ($imgcheck[1]),0,0);
